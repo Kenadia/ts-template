@@ -1,0 +1,31 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "description": "Project description.",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "compile:watch": "npm run compile -- --watch",
+    "prepack": "npm run compile",
+    "test": "ava",
+    "test:watch": "nodemon --exec npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kenadia/project-name.git"
+  },
+  "author": "Kenneth Schiller",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kenadia/project-name/issues"
+  },
+  "homepage": "https://github.com/kenadia/project-name#readme",
+  "dependencies": {
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "ava": "^3.2.0",
+    "nodemon": "^2.0.2"
+  }
+}
